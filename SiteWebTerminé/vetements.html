@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet PFI SiteWeB</title>
+    <link rel="stylesheet" href="styles1.css"> <!-- Lien vers le fichier CSS externe -->
+    <style>
+        .product {
+            text-align: center;
+            margin-bottom: 20px;
+            cursor: pointer; /* Ajout du curseur pointer pour indiquer que l'image est cliquable */
+        }
+        .product img {
+            width: 200px;
+            display: block;
+            margin: 0 auto; /* Pour centrer l'image horizontalement */
+            transition: transform 0.5s ease; /* Ajout de l'effet de transition */
+        }
+        .product:hover img {
+            transform: rotate(360deg); /* Rotation de 360 degrés lors du survol */
+        }
+        .details {
+            background-color: #000000;
+            padding: 10px;
+            margin-top: 10px;
+            display: none; /* Par défaut, la boîte d'achat est cachée */
+        }
+        .achat {
+            text-align: center;
+        }
+        .achat-button {
+            background-color: #f60404;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .product p {
+            color: red; /* Couleur du texte en rouge */
+        }
+    </style>
+</head>
+<body>
+    <!-- Structure du menu -->
+    <ul class="menu">
+        <li><a href="Index.html">Accueil</a></li>
+        <li><a href="vetements.html">Vêtements</a></li>
+        <li><a href="film.html">Extraits vidéos</a></li>
+        <li><a href="mailto:G-Unit.G.Y@outlook.com">Nous Contacter</a></li>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+    </ul>
+    
+    <!-- Contenu de la page -->
+    <div class="content" style="color: #FF0000; font-family: 'Comic Sans MS', cursive; padding: 20px;">
+        <h1>T-Shirts en Vente</h1>  
+
+        <!-- Première image et titre -->
+        <div class="product" onclick="showDetails(3)">
+            <img src="Images/t-shirt-red-1.jpg" alt="Images/t-shirt-1.jpg">
+            <div class="details">
+                <h3>T-Shirt Rouge 1</h3>
+                <p>Prix: 10.99$</p>
+                <p>Grandeur: Petit</p>
+                <button class="achat-button">Acheter</button> <!-- Bouton pour faire apparaître la boîte d'achat -->
+            </div>
+        </div>
+               
+        <!-- Deuxième image et titre -->
+        <div class="product" onclick="showDetails(3)">
+            <img src="Images/t-shirt-red-1.jpg" alt="Images/t-shirt-1.jpg">
+            <div class="details">
+                <h3>T-Shirt Rouge 2</h3>
+                <p>Prix: 10.99$</p>
+                <p>Grandeur: Moyen</p>
+                <button class="achat-button">Acheter</button> <!-- Bouton pour faire apparaître la boîte d'achat -->
+            </div>
+        </div>
+
+        <!-- Troisième image et titre -->
+        <div class="product" onclick="showDetails(3)">
+            <img src="Images/t-shirt-red-1.jpg" alt="Images/t-shirt-1.jpg">
+            <div class="details">
+                <h3>T-Shirt Rouge 3</h3>
+                <p>Prix: 10.99$</p>
+                <p>Grandeur: Grand</p>
+                <button class="achat-button">Acheter</button> <!-- Bouton pour faire apparaître la boîte d'achat -->
+            </div>
+        </div>
+
+        <!-- Boîte d'achat -->
+        <div class="achat">
+            <h2>Boîte d'Achat</h2>
+            <p>Veuillez sélectionner votre taille :</p>
+            <select name="taille">
+                <option value="petit">Petit</option>
+                <option value="moyen">Moyen</option>
+                <option value="grand">Grand</option>
+            </select>
+            <p>Veuillez saisir la quantité :</p>
+            <input type="number" name="quantite" min="1" value="1">
+            <button class="achat-button">Acheter</button>
+        </div>
+    </div>
+
+    <!-- Script JavaScript pour faire apparaître et disparaître la boîte d'achat -->
+    <script>
+        function showDetails(productNumber) {
+            // Masquer toutes les boîtes d'achat
+            const allDetails = document.querySelectorAll('.details');
+            allDetails.forEach(detail => {
+                detail.style.display = 'none';
+            });
+            // Afficher la boîte d'achat correspondante à l'image cliquée
+            const detailsToShow = document.querySelector(`.product:nth-child(${productNumber}) .details`);
+            detailsToShow.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

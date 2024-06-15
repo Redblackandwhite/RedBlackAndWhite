@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet PFI Site WEB</title>
+    <link rel="stylesheet" href="styles1.css"> <!-- Lien vers le fichier CSS externe -->
+    <style>
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .video-container video {
+            margin: 0 10px;
+            cursor: pointer; /* Change le curseur au survol pour indiquer que la vidéo est cliquable */
+        }
+    </style>
+</head>
+<body>
+     <!-- Structure du menu -->
+     <ul class="menu">
+        <li><a href="Index.html">Accueil</a></li>
+        <li><a href="vetements.html">Vêtements</a></li>
+        <li><a href="film.html">Extraits vidéos</a></li>
+        <li><a href="mailto:G-Unit.G.Y@outlook.com">Nous Contacter</a></li>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+    </ul>
+    
+    <!-- Contenu de la page -->
+    
+        <div class="video-container">
+            <a href="Images/dogz.mp4">
+                <video width="320" height="240" controls>
+                    <source src="Images/dogz.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+            <a href="Images/Star_Wars_Rise_of_Skywalker_Trim.mp4">
+                <video width="320" height="240" controls>
+                    <source src="Images/Star_Wars_Rise_of_Skywalker_Trim.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+        </div>
+    </div>
+</body>
+</html> 
+     

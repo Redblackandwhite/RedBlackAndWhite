@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet PFI Programmation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS externe -->
+    <style>
+        .login-box {
+            position: fixed; /* Positionnement fixe par rapport à la fenêtre du navigateur */
+            top: 55px; /* Distance par rapport au haut de la fenêtre */
+            right: 0px; /* Distance par rapport à la droite de la fenêtre */
+            width: 160px; /* Largeur de la boîte de connexion */
+            padding: 10px; /* Espacement interne */
+            background-color: #000000; /* Couleur de fond */
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.775); /* Ombre légère */
+        }
+
+        /* Styles pour le formulaire de connexion */
+        .login-box form {
+            padding: 10px;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"],
+        .login-box button[type="submit"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .login-box button[type="submit"] {
+            background-color: #fa0909;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-box button[type="submit"]:hover {
+            background-color: #cf0909;
+        }
+    </style>
+</head>
+<body>
+    <!-- Structure du menu -->
+    <ul class="menu">
+        <li><a href="Index.html">Accueil</a></li>
+        <li><a href="vetements.html">Vêtements</a></li>
+        <li><a href="film.html">Extraits vidéos</a></li>
+        <li><a href="mailto:G-Unit.G.Y@outlook.com">Nous Contacter</a></li>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+
+    </ul>
+    
+    <!-- Contenu de la page -->
+    <div class="content" style="background-color: #080800; color: #FF0000; font-family: 'Comic Sans MS', cursive; padding: 20px;">
+        <h1>Petit site web pour achat de vetements ainsi</h1>
+        <h1>que des Extraits videos</h1>
+        <p>Vous pouvez aussi vous connecter ou créer un compte.</p>
+        <div class="login-box">
+            <h2>Connexion</h2>
+            <form action="/action_page.php">
+                <div class="container">
+                    <label for="uname"><b>Nom d'utilisateur</b></label>
+                    <input type="text" placeholder="Entrer Nom d'utilisateur" name="uname" required>
+
+                    <label for="psw"><b>Mot de passe</b></label>
+                    <input type="password" placeholder="Entrer Mot de passe" name="psw" required>
+
+                    <button type="submit">Se connecter</button>
+                </div>
+            </form>
+            <p>Si vous n'avez pas de compte, veuillez <a href="Login.html">créer un compte</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

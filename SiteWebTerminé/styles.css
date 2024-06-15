@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Style du corps de la page */
+body {
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espaces vides par défaut */
+    font-family: Arial, sans-serif; /* Police de caractères par défaut */
+    background-image: url("Images/netflix-background-9-900x506.jpg"); /* Chemin d'accès relatif à l'image de fond */
+    background-size: cover; /* Réglez la taille de l'image pour couvrir tout le corps */
+    background-position: center; /* Centrez l'image horizontalement et verticalement */
+    background-attachment: fixed; /* Fixez l'image de fond pour qu'elle ne se déplace pas lorsque le contenu défile */
+}
+
+/* Style du menu */
+ul.menu {
+    list-style-type: none; /* Supprime les puces de liste */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Empêche le défilement horizontal */
+    background-color: #000000; /* Fond jaune */
+}
+
+/* Style des éléments du menu */
+ul.menu li {
+    float: left; /* Aligne les éléments du menu horizontalement */
+}
+
+/* Changement de style lorsque le curseur survole un élément du menu */
+ul.menu li:hover {
+    transform: rotate(360deg); /* Rotation de 360 degrés lors du survol */
+    transition: transform 0.6s ease; /* Animation de rotation */
+}
+
+/* Style des liens dans le menu */
+ul.menu li a {
+    display: block;
+    color: #FF0000; /* Texte rouge */
+    text-align: center;
+    padding: 20px 28px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold; /* Mettre en gras */
+    font-style: italic; /* Mettre en italique */
+}
+
+/* Changement de style lorsque le curseur survole un élément du menu */
+ul.menu li a:hover {
+    background-color: #FF0000; /* Fond rouge */
+    color: #000000; /* Texte jaune */
+}
+
+/* Style de l'onglet de connexion */
+.login {
+    float: right; /* Aligne l'onglet à droite */
+}
+
+/* Style des éléments du menu de connexion */
+.login a {
+    display: block;
+    color: #FF0000; /* Texte rouge */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Changement de style lorsque le curseur survole l'onglet de connexion */
+.login a:hover {
+    background-color: #FF0000; /* Fond rouge */
+    color: #000000; /* Texte jaune */
+}
+
+/* Animation de rotation lors du survol */
+ul.menu li:hover, .login a:hover {
+    transform: rotate(360deg); /* Rotation de 360 degrés lors du survol */
+    transition: transform 0.6s ease; /* Animation de rotation */
+}
+/* Style pour le contenu de la page */
+.content {
+    background-color: #000000; /* Fond jaune */
+    color: #FF0000; /* Texte rouge */
+    font-family: "Comic Sans MS", cursive; /* Police de caractères Comic Sans MS */
+    padding: 20px; /* Espacement intérieur */
+}
+
+/* Style pour le contenu de la page */
+.content {
+    background-color: #000000; /* Fond jaune */
+    color: #FF0000; /* Texte rouge */
+    font-family: "Comic Sans MS", cursive; /* Police de caractères Comic Sans MS */
+    padding: 20px; /* Espacement intérieur */
+}
+.login-box {
+    position: fixed;
+    top: 50px; /* Augmenter cette valeur pour déplacer la boîte vers le bas */
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(251, 2, 2, 0.872);
+}
